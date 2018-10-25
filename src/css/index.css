@@ -1,0 +1,346 @@
+@font-face {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tenor Sans'), local('TenorSans'), url(https://fonts.gstatic.com/s/tenorsans/v9/bx6ANxqUneKx06UkIXISn3V4Dw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'), url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPecZTIAOhVxoMyOr9n_E7fdMPmCA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mrs Saint Delafield';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mrs Saint Delafield'), local('MrsSaintDelafield-Regular'), url(https://fonts.gstatic.com/s/mrssaintdelafield/v5/v6-IGZDIOVXH9xtmTZfRagunqBw5WC62QKknKg.ttf) format('truetype');
+}
+.app-background {
+  background-color: #f7f7f7;
+}
+.nav-container {
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  position: fixed;
+  top: 0;
+}
+.nav-container .logo {
+  height: 100px;
+  width: auto;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+.nav-container .ml-auto {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+.nav-container .nav-link {
+  color: #DBB3B1;
+  font-size: 22px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: thin;
+}
+.nav-container .nav-link:hover {
+  color: #C16E70;
+}
+.side-bar {
+  font-family: 'Mrs Saint Delafield', cursive;
+  margin-top: 50px;
+  height: 300px;
+  width: 140px;
+  background-color: #DBB3B1;
+  color: white;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 30vh;
+  left: 0;
+  z-index: 5;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.side-bar h4 {
+  font-size: 50px;
+  margin-left: 25px;
+  margin-top: 50px;
+}
+.side-bar ul {
+  padding: 20px;
+}
+.side-bar li {
+  font-family: 'Titillium Web', sans-serif;
+  list-style: none;
+  padding: 10px 0px;
+}
+.side-bar li a {
+  color: white;
+}
+.parallax-element {
+  height: 100vh;
+}
+.home-header-container {
+  position: absolute;
+  background-color: white;
+  padding: 30px;
+  margin-top: -460px;
+  margin-left: 28%;
+  display: flex;
+  width: 600px;
+  outline: 1px solid white;
+  outline-offset: 5px;
+}
+.home-header-container .header-text {
+  padding-right: 20px;
+}
+.home-header-container h2 {
+  font-family: 'Mrs Saint Delafield', cursive;
+  color: #C16E70;
+  font-size: 50px;
+  text-align: center;
+}
+.home-header-container p {
+  font-family: 'Tenor Sans', sans-serif;
+}
+.home-header-container img {
+  height: 300px;
+  width: auto;
+}
+.home-quote {
+  position: absolute;
+  font-family: 'Tenor Sans', sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -360px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+.home-quote .quote-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 550px;
+  background-color: white;
+  padding: 20px;
+  outline: 2px solid white;
+  outline-offset: 5px;
+  margin-left: -5%;
+  margin-top: 50px;
+}
+.home-quote img {
+  height: 100%;
+  width: auto;
+  margin-left: 65%;
+  margin-top: 200px;
+  z-index: 4;
+}
+.home-quote h2 {
+  color: #adadad;
+  width: 450px;
+  z-index: 5;
+}
+.home-quote h3 {
+  color: #969696;
+  display: flex;
+  justify-content: center;
+}
+.home-center-div {
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 300px;
+  width: 75%;
+  margin-left: 18%;
+  display: flex;
+}
+.home-center-div .home-tags {
+  font-family: 'Mrs Saint Delafield', cursive;
+  background-color: #DBB3B1;
+  list-style: none;
+  color: white;
+  font-size: 60px;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 50px;
+  margin-top: 22px;
+  outline: 1px solid #DBB3B1;
+  outline-offset: 5px;
+}
+.home-center-div .joyful {
+  padding-left: 0%;
+}
+.home-center-div .artistic {
+  padding-left: 20%;
+}
+.home-center-div .genuine {
+  padding-left: 40%;
+}
+.carousel-item {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+.home-carousel {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.carousel-arrows {
+  width: 60%;
+}
+.home-bottom-img {
+  padding-top: 150px;
+}
+.home-page-footer {
+  background-color: white;
+  outline: 1px solid white;
+  outline-offset: 5px;
+  position: absolute;
+  width: 500px;
+  height: auto;
+  margin-top: -450px;
+  margin-left: 600px;
+  padding: 50px;
+}
+.home-page-footer h2 {
+  font-family: 'Mrs Saint Delafield', cursive;
+  color: #C16E70;
+  font-size: 50px;
+  text-align: center;
+}
+.home-page-footer p {
+  font-family: 'Tenor Sans', sans-serif;
+}
+.contact-page {
+  width: 80%;
+  margin: 0 auto;
+}
+.contact-page .contact-column-one {
+  width: 45%;
+  border-right: 1px solid black;
+  padding-right: 100px;
+}
+.contact-page h1 {
+  font-family: 'Mrs Saint Delafield', cursive;
+  color: #C16E70;
+  font-size: 50px;
+  text-align: center;
+}
+.contact-page p {
+  padding: 20px 0px;
+}
+.contact-page .contact-columns {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+}
+.contact-page .contact-form {
+  margin-left: 100px;
+}
+.investment-page {
+  text-align: center;
+}
+.investment-page h1 {
+  font-family: 'Mrs Saint Delafield', cursive;
+  color: #C16E70;
+  font-size: 70px;
+  margin: 30px 0px;
+  margin-left: 10px;
+}
+.investment-page .investment-header {
+  position: absolute;
+  background-color: white;
+  padding: 30px;
+  margin-top: -350px;
+  margin-left: 38%;
+  display: flex;
+  width: 300px;
+  outline: 1px solid white;
+  outline-offset: 5px;
+}
+.price-boxes {
+  margin: 50px auto;
+  margin-left: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.price-boxes .box {
+  height: 350px;
+  width: 350px;
+  background-color: white;
+  padding: 20px;
+  margin: 30px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+.price-boxes h2 {
+  font-family: 'Mrs Saint Delafield', cursive;
+  color: #C16E70;
+  font-size: 50px;
+}
+.price-boxes h4 {
+  font-family: 'Tenor Sans', sans-serif;
+  color: #DBB3B1;
+  font-size: 30px;
+}
+.price-boxes p {
+  font-family: 'Tenor Sans', sans-serif;
+}
+.portfolio-header {
+  text-align: center;
+  height: 200px;
+  width: 300px;
+  background-color: white;
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 37%;
+  outline: 1px solid white;
+  outline-offset: 5px;
+}
+.portfolio-header h1 {
+  padding-top: 25%;
+  font-family: 'Mrs Saint Delafield', cursive;
+  color: #C16E70;
+  font-size: 60px;
+  text-align: center;
+}
+.portfolio-container {
+  margin-top: 50px;
+  display: flex;
+}
+.photo-section {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-left: -5%;
+}
+.photo-section img {
+  height: 100%;
+  width: auto;
+  padding: 0px;
+  margin: 0px;
+}
+.photo-section .photo {
+  padding: 0px;
+  margin: 0px;
+  height: 300px;
+}
+.copyright {
+  padding-top: 5px;
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
