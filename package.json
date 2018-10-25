@@ -12,13 +12,14 @@
     "react-dom": "^16.5.2",
     "react-less-watcher": "^1.1.4",
     "react-parallax": "^2.0.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5",
     "react-scrollable-anchor": "^0.6.1",
     "reactstrap": "^6.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp build/index.html build/404.html",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
