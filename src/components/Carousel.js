@@ -11,7 +11,7 @@ class CarouselImg extends Component {
     render() {
         return (
             <Carousel
-            showArrows
+            showArrows={false}
             autoPlay={true}
             interval={3000}
             showStatus={false}
