@@ -10,6 +10,7 @@ import Elif4 from '../img/elif4.jpg';
 class CarouselImg extends Component {
     render() {
         return (
+            <div className="carousel-container">
             <Carousel
             showArrows={false}
             autoPlay={true}
@@ -31,6 +32,7 @@ class CarouselImg extends Component {
                     <img src={Elif4} alt="carousel"/>
                 </div>
             </Carousel>
+            </div>
         );
     }
 }

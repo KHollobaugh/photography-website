@@ -1,43 +1,25 @@
-import React from 'react';
-import {
-  Navbar,
-  Nav,
-  NavItem
-} from 'reactstrap';
-import LogoClean from '../img/logo-clean.png'
 import {Link} from 'react-router-dom';
+import React from 'react';
+import LogoClean from '../img/logo-clean.png';
 
 class Navigation extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
   render() {
     return (
       <div>
-        <Navbar className= "nav-container" expand="md">
+        <section className= "nav-container">
           <a href="/"><img src={LogoClean} alt="logo" className="logo"/></a>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
+            <div className="ml-auto">
+              <div>
                 <Link to="/portfolio" className="nav-link">PORTFOLIO</Link>
-              </NavItem>
-              <NavItem>
+              </div>
+              <div>
                 <Link to="/investment" className="nav-link">INVESTMENT</Link>
-              </NavItem>
-              <NavItem>
+              </div>
+              <div>
                 <Link to="/contact" className="nav-link">CONTACT</Link>
-              </NavItem>
-            </Nav>
-        </Navbar>
+              </div>
+            </div>
+        </section>
       </div>
     );
   }
