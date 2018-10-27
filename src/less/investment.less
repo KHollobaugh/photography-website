@@ -3,13 +3,6 @@
 //Investment Page
 .investment-page {
     text-align: center;
-    h1 {
-        font-family: 'Mrs Saint Delafield', cursive;
-        color: @dark-text;
-        font-size: 7rem;
-        margin: 30px 0px;
-        margin-left: 10px;
-    }
     .investment-header {
     position: absolute;
     background-color: @white;
@@ -20,6 +13,31 @@
     width: 300px;
     outline: 1px solid @white;
     outline-offset: 5px;
+    @media @tablet {
+        margin-left: 25%;
+    }
+    @media @phone {
+        position: relative;
+        background-color: none;
+        margin: 0 auto;
+        margin-top: 20px;
+        outline: none;
+        width: 80%;
+        padding: 15px;
+    }
+    }
+    h1 {
+        font-family: 'Mrs Saint Delafield', cursive;
+        color: @dark-text;
+        font-size: 7rem;
+        margin: 30px 0px;
+        margin-left: 10px;
+    }
+}
+
+.parallax {
+    @media @phone {
+        display: none;
     }
 }
 
@@ -28,6 +46,10 @@
     margin-left: 2%;
     display: flex;
     flex-wrap: wrap;
+    @media @phone{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
     .box {
         height: 350px;
         width: 350px;
@@ -35,6 +57,14 @@
         padding: 20px;
         margin: 30px;
         box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        @media @tablet {
+            height: 350px;
+            width: 300px;
+        }
+        @media @phone {
+            width: 80%;
+            font-size: 1.4rem;
+        }
     }
     h2{
         font-family: 'Mrs Saint Delafield', cursive;

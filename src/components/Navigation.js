@@ -7,7 +7,7 @@ class Navigation extends React.Component {
     return (
       <div>
         <section className= "nav-container">
-          <a href="/"><img src={LogoClean} alt="logo" className="logo"/></a>
+          <a href="/" className="logo-bar"><img src={LogoClean} alt="logo" className="logo"/></a>
             <div className="ml-auto">
               <div>
                 <Link to="/portfolio" className="nav-link">PORTFOLIO</Link>

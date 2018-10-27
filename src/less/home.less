@@ -8,25 +8,66 @@
     margin-left: 28%;
     display: flex;
     width: 600px;
-    // border: 1px solid #C16E70;
+    height: auto;
     outline: 1px solid white;
     outline-offset: 5px;
+    @media @small-screen {
+        margin-left: 18%;
+    }
+    @media @tablet {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: -480px;
+        margin-left: 10%;
+        padding: 20px;
+    }
+    @media @phone {
+        flex-direction: column;
+        width: 90%;
+        font-size: 1.4rem;
+        margin-left: 5%;
+        margin-top: -500px;
+        padding: 10px;
+    }
     .header-text {
         padding-right: 20px;
+        @media @tablet{
+            padding-right: 0px;
+        }
+        @media @phone {
+            padding: 0px;
+        }
     }
     h2 {
         font-family: 'Mrs Saint Delafield', cursive;
         color: #C16E70;
         font-size: 5rem;
         text-align: center;
+
     }
     p {
         font-family: 'Tenor Sans', sans-serif;
+        @media @phone {
+            font-size: 1.4rem;
+            margin: 10px auto;
+            text-align: center;
+        }
+        }
 
-    }
     img {
         height: 300px;
         width: auto;
+        @media @tablet {
+            height: 200px;
+            width: auto;
+            margin: 0 auto;
+        }
+        @media @phone {
+            height: 200px;
+            width: auto;
+            margin: 0 auto;
+        }
     }
 
 }
@@ -43,6 +84,19 @@
     height: 400px;
     display: flex;
     justify-content: center;
+    @media @small-screen {
+        margin-left: 50px;
+    }
+    @media @tablet {
+        position: static;
+        margin: 0 auto;
+    }
+    @media @phone {
+        position: static;
+        margin: 15px auto;
+        flex-direction: column;
+        height: auto;
+    }
     .quote-text {
         display: flex;
         flex-direction: column;
@@ -54,6 +108,17 @@
         outline-offset: 5px;
         margin-left: -5%;
         margin-top: 50px;
+        @media @small-screen {
+            width: 450px;
+        }
+        @media @tablet {
+
+        }
+        @media @phone {
+            position: static;
+            width: 100%;
+            margin: 0 auto;
+        }
     }
     img {
         height: 100%;
@@ -61,30 +126,77 @@
         margin-left: 65%;
         margin-top: 200px;
         z-index: 4;
+        @media @small-screen {
+            height: 90%;
+            margin-left: 50%;
+        }
+        @media @tablet {
+            height: 300px;
+            width: auto;
+            margin-left: 30%;
+        }
+        @media @phone {
+            margin: 15px auto;
+            margin-bottom: 0px;
+            height: 220px;
+            width: auto;
+
+        }
     }
     h2 {
         color: #adadad;
         width: 450px;
         z-index: 5;
+        @media @small-screen {
+            font-size: 2rem;
+            width: 400px;
+        }
+        @media @phone {
+            width: 100%;
+            margin: 0 auto;
+        }
     }
     h3 {
         color: #969696;
         display: flex;
         justify-content: center;
+        @media @small-screen {
+            justify-content: flex-start;
+            margin-top: 10px;
+        }
     }
 }
 
 //Home Page Section w/ Carousel
 
 .home-center-div {
-
     height: 300px;
     margin: 0 auto;
     margin-top: 300px;
     width: 75%;
     margin-left: 18%;
     display: flex;
-    flex-wrap: wrap;
+    @media @small-screen {
+        flex-direction: column-reverse;
+        height: auto;
+        width: 80%;
+        margin-bottom: 20px;
+        margin-top: 250px;
+    }
+    @media @tablet {
+        flex-direction: column-reverse;
+        margin: 0px auto;
+        margin-top: 150px;
+        width: 90%;
+        height: auto;
+    }
+    @media @phone {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+    }
 
     .home-tags {
         font-family: 'Mrs Saint Delafield', cursive;
@@ -100,30 +212,97 @@
         margin-top: 22px;
         outline: 1px solid #DBB3B1;
         outline-offset: 5px;
+        @media @small-screen {
+            height: 100%;
+            width: 80%;
+            margin: 15px auto;
+        }
+        @media @tablet {
+            width: 100%;
+            margin: 20px auto;
+            height: auto;
+        }
+        @media @phone {
+            width: 100%;
+            margin: 0px;
+            height: auto;
+        }
     }
     .joyful {
         padding-left: 10%;
         font-size: 6rem;
+        @media @tablet {
+            padding-left: 22%;
+            font-size: 4rem;
+        }
+        @media @phone {
+            padding-left: 15%;
+            font-size: 3.5rem;
+        }
     }
     .artistic {
         padding-left: 30%;
         font-size: 6rem;
+        @media @tablet {
+            padding-left: 42%;
+            font-size: 4rem;
+        }
+        @media @phone {
+            padding-left: 35%;
+            font-size: 3.5rem;
+        }
     }
     .genuine {
         padding-left: 50%;
         font-size: 6rem;
+        @media @tablet {
+            padding-left: 62%;
+            font-size: 4rem;
+        }
+        @media @phone {
+            padding-left: 55%;
+            font-size: 3.5rem;
+        }
     }
 }
 
 .carousel-container {
-    width: 400px;
+    width: 50%;
     height: auto;
+    margin-top: 25px;
+    @media @small-screen {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+    @media @tablet {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    @media @phone {
+        width: 100%;
+        margin: 15px auto;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
 }
 
 
 //Home Page Bottom Parallax
 .home-bottom-img {
     padding-top: 150px;
+    @media @small-screen {
+        padding-top: 0px;
+    }
+    @media @tablet {
+        padding-top: 20px;
+    }
+    @media @phone {
+        padding-top: 15px;
+    }
 }
 
 //Home Page Footer
@@ -138,6 +317,21 @@
     margin-top: -450px;
     margin-left: 600px;
     padding: 50px;
+    @media @small-screen {
+        margin-left: 265px;
+    }
+    @media @tablet {
+        width: 60%;
+        height: auto;
+        margin-left: 150px;
+        padding: 20px;
+    }
+    @media @phone {
+        width: 90%;
+        position: static;
+        margin: 0 auto;
+        padding: 10px;
+    }
     h2 {
         font-family: 'Mrs Saint Delafield', cursive;
         color: @dark-text;
@@ -146,5 +340,8 @@
     }
     p {
         font-family: 'Tenor Sans', sans-serif;
+        @media @tablet {
+            font-size: 1.4rem;
+        }
     }
 }

@@ -27,7 +27,7 @@ const Home = () => {
             </div>
 
 
-            <SideBar />
+            <SideBar/>
 
 
             <div className="home-quote">
@@ -40,7 +40,9 @@ const Home = () => {
 
 
             <div className="home-center-div">
-            <CarouselImg />
+
+            <CarouselImg />               
+
             <ul className="home-tags">
                 <li className="joyful">Joyful,</li>
                 <li className="artistic">Artistic,</li>
@@ -50,6 +52,7 @@ const Home = () => {
 
             <div className="home-bottom-img">
             <Parallax
+            className="parallax"
             bgImage={require('../img/bouquet.jpg')}
             bgImageAlt="rust"
             strength={200}>

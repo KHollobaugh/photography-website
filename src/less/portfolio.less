@@ -10,12 +10,28 @@
     margin-left: 37%;
     outline: 1px solid @white;
     outline-offset: 5px;
+    @media @tablet {
+        margin-left: 30%;
+    }
+    @media @phone {
+        position: relative;
+        background-color: none;
+        margin: 0 auto;
+        outline: none;
+        width: 80%;
+        height: 170px;
+        padding-bottom: 25%;
+    }
     h1 {
         padding-top: 25%;
         font-family: 'Mrs Saint Delafield', cursive;
         color: @dark-text;
         font-size: 6rem;
         text-align: center;
+        @media @phone {
+            padding-top: 20%;
+        }
+
     }
 }
 .portfolio-container {
@@ -28,7 +44,13 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-left: -5%;
+    @media @tablet {
+        justify-content: space-evenly;
+    }
+    @media @phone {
+        width: 95%;
+        justify-content: space-evenly;
+    }
 img {
     height: 100%;
     width: auto;
@@ -39,6 +61,16 @@ img {
     padding: 0px;
     margin: 0px;
     height: 300px;
+    width: auto;
+    @media @tablet {
+        height: 250px;
+        width: auto;
+        margin: 0 auto;
+    }
+    @media @phone {
+        height: 190px;
+        width: auto;
+        margin: 0 auto;
+    }
 }
 }
-

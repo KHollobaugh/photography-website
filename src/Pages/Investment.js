@@ -7,6 +7,7 @@ const Investment = () => {
         <div className="investment-page">
 
             <Parallax
+            className="parallax"
             bgImage={require('../img/mackinac.jpg')}
             bgImageAlt="mackinac bridge"
             strength={200}>

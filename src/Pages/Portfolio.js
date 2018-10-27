@@ -16,6 +16,7 @@ class Portfolio extends React.Component {
         return(
             <div>
             <Parallax
+            className="parallax"
             bgImage={require('../img/wildflowers.jpg')}
             bgImageAlt="foliage"
             strength={200}>

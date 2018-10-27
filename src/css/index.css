@@ -152,13 +152,23 @@ table {
   src: local('Mrs Saint Delafield'), local('MrsSaintDelafield-Regular'), url(https://fonts.gstatic.com/s/mrssaintdelafield/v5/v6-IGZDIOVXH9xtmTZfRagunqBw5WC62QKknKg.ttf) format('truetype');
 }
 .contact-page {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 100px auto;
 }
 .contact-page .contact-column-one {
-  width: 45%;
+  width: 50%;
   border-right: 1px solid #000000;
-  padding-right: 100px;
+  padding: 0% 5%;
+  padding-left: 10%;
+  min-width: 300px;
+}
+@media (max-width: 800px) {
+  .contact-page .contact-column-one {
+    width: 100%;
+    padding: 0%;
+    border-right: none;
+    border-bottom: 1px solid #000000;
+  }
 }
 .contact-page h1 {
   font-family: 'Mrs Saint Delafield', cursive;
@@ -167,15 +177,54 @@ table {
   text-align: center;
 }
 .contact-page p {
+  font-size: 1.6rem;
   padding: 20px 0px;
 }
 .contact-page .contact-columns {
-  margin-top: 100px;
-  margin-bottom: 100px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.contact-page .contact-form {
-  margin-left: 100px;
+@media (max-width: 800px) {
+  .contact-page .contact-columns {
+    flex-direction: column;
+  }
+}
+.contact-page .contact-column-two {
+  font-size: 1.6rem;
+  width: 50%;
+  padding: 5%;
+  min-width: 300px;
+}
+@media (max-width: 800px) {
+  .contact-page .contact-column-two {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0%;
+  }
+}
+.contact-page .input {
+  font-size: 1.6rem;
+}
+.form-container {
+  font-size: 1.6rem;
+}
+.button {
+  font-size: 2rem;
+  height: 40px;
+  width: 80px;
+}
+@media (max-width: 800px) {
+  .button {
+    width: 60%;
+    padding: 0%;
+  }
+}
+@media (max-width: 500px) {
+  .button {
+    width: 100%;
+    height: 50px;
+  }
 }
 .home-header-container {
   position: absolute;
@@ -185,11 +234,47 @@ table {
   margin-left: 28%;
   display: flex;
   width: 600px;
+  height: auto;
   outline: 1px solid white;
   outline-offset: 5px;
 }
+@media (max-width: 1000px) {
+  .home-header-container {
+    margin-left: 18%;
+  }
+}
+@media (max-width: 800px) {
+  .home-header-container {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -480px;
+    margin-left: 10%;
+    padding: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home-header-container {
+    flex-direction: column;
+    width: 90%;
+    font-size: 1.4rem;
+    margin-left: 5%;
+    margin-top: -500px;
+    padding: 10px;
+  }
+}
 .home-header-container .header-text {
   padding-right: 20px;
+}
+@media (max-width: 800px) {
+  .home-header-container .header-text {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .home-header-container .header-text {
+    padding: 0px;
+  }
 }
 .home-header-container h2 {
   font-family: 'Mrs Saint Delafield', cursive;
@@ -200,9 +285,30 @@ table {
 .home-header-container p {
   font-family: 'Tenor Sans', sans-serif;
 }
+@media (max-width: 500px) {
+  .home-header-container p {
+    font-size: 1.4rem;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
 .home-header-container img {
   height: 300px;
   width: auto;
+}
+@media (max-width: 800px) {
+  .home-header-container img {
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .home-header-container img {
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+  }
 }
 .home-quote {
   position: absolute;
@@ -213,6 +319,25 @@ table {
   height: 400px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 1000px) {
+  .home-quote {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .home-quote {
+    position: static;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .home-quote {
+    position: static;
+    margin: 15px auto;
+    flex-direction: column;
+    height: auto;
+  }
 }
 .home-quote .quote-text {
   display: flex;
@@ -226,6 +351,18 @@ table {
   margin-left: -5%;
   margin-top: 50px;
 }
+@media (max-width: 1000px) {
+  .home-quote .quote-text {
+    width: 450px;
+  }
+}
+@media (max-width: 500px) {
+  .home-quote .quote-text {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .home-quote img {
   height: 100%;
   width: auto;
@@ -233,15 +370,54 @@ table {
   margin-top: 200px;
   z-index: 4;
 }
+@media (max-width: 1000px) {
+  .home-quote img {
+    height: 90%;
+    margin-left: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .home-quote img {
+    height: 300px;
+    width: auto;
+    margin-left: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .home-quote img {
+    margin: 15px auto;
+    margin-bottom: 0px;
+    height: 220px;
+    width: auto;
+  }
+}
 .home-quote h2 {
   color: #adadad;
   width: 450px;
   z-index: 5;
 }
+@media (max-width: 1000px) {
+  .home-quote h2 {
+    font-size: 2rem;
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .home-quote h2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .home-quote h3 {
   color: #969696;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 1000px) {
+  .home-quote h3 {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
 }
 .home-center-div {
   height: 300px;
@@ -250,7 +426,33 @@ table {
   width: 75%;
   margin-left: 18%;
   display: flex;
-  flex-wrap: wrap;
+}
+@media (max-width: 1000px) {
+  .home-center-div {
+    flex-direction: column-reverse;
+    height: auto;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 250px;
+  }
+}
+@media (max-width: 800px) {
+  .home-center-div {
+    flex-direction: column-reverse;
+    margin: 0px auto;
+    margin-top: 150px;
+    width: 90%;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .home-center-div {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+  }
 }
 .home-center-div .home-tags {
   font-family: 'Mrs Saint Delafield', cursive;
@@ -267,24 +469,121 @@ table {
   outline: 1px solid #DBB3B1;
   outline-offset: 5px;
 }
+@media (max-width: 1000px) {
+  .home-center-div .home-tags {
+    height: 100%;
+    width: 80%;
+    margin: 15px auto;
+  }
+}
+@media (max-width: 800px) {
+  .home-center-div .home-tags {
+    width: 100%;
+    margin: 20px auto;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .home-center-div .home-tags {
+    width: 100%;
+    margin: 0px;
+    height: auto;
+  }
+}
 .home-center-div .joyful {
   padding-left: 10%;
   font-size: 6rem;
+}
+@media (max-width: 800px) {
+  .home-center-div .joyful {
+    padding-left: 22%;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .home-center-div .joyful {
+    padding-left: 15%;
+    font-size: 3.5rem;
+  }
 }
 .home-center-div .artistic {
   padding-left: 30%;
   font-size: 6rem;
 }
+@media (max-width: 800px) {
+  .home-center-div .artistic {
+    padding-left: 42%;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .home-center-div .artistic {
+    padding-left: 35%;
+    font-size: 3.5rem;
+  }
+}
 .home-center-div .genuine {
   padding-left: 50%;
   font-size: 6rem;
 }
+@media (max-width: 800px) {
+  .home-center-div .genuine {
+    padding-left: 62%;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .home-center-div .genuine {
+    padding-left: 55%;
+    font-size: 3.5rem;
+  }
+}
 .carousel-container {
-  width: 400px;
+  width: 50%;
   height: auto;
+  margin-top: 25px;
+}
+@media (max-width: 1000px) {
+  .carousel-container {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .carousel-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-container {
+    width: 100%;
+    margin: 15px auto;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
 }
 .home-bottom-img {
   padding-top: 150px;
+}
+@media (max-width: 1000px) {
+  .home-bottom-img {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .home-bottom-img {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home-bottom-img {
+    padding-top: 15px;
+  }
 }
 .home-page-footer {
   background-color: #ffffff;
@@ -297,6 +596,27 @@ table {
   margin-left: 600px;
   padding: 50px;
 }
+@media (max-width: 1000px) {
+  .home-page-footer {
+    margin-left: 265px;
+  }
+}
+@media (max-width: 800px) {
+  .home-page-footer {
+    width: 60%;
+    height: auto;
+    margin-left: 150px;
+    padding: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home-page-footer {
+    width: 90%;
+    position: static;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
 .home-page-footer h2 {
   font-family: 'Mrs Saint Delafield', cursive;
   color: #C16E70;
@@ -306,15 +626,13 @@ table {
 .home-page-footer p {
   font-family: 'Tenor Sans', sans-serif;
 }
+@media (max-width: 800px) {
+  .home-page-footer p {
+    font-size: 1.4rem;
+  }
+}
 .investment-page {
   text-align: center;
-}
-.investment-page h1 {
-  font-family: 'Mrs Saint Delafield', cursive;
-  color: #C16E70;
-  font-size: 7rem;
-  margin: 30px 0px;
-  margin-left: 10px;
 }
 .investment-page .investment-header {
   position: absolute;
@@ -327,11 +645,45 @@ table {
   outline: 1px solid #ffffff;
   outline-offset: 5px;
 }
+@media (max-width: 800px) {
+  .investment-page .investment-header {
+    margin-left: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .investment-page .investment-header {
+    position: relative;
+    background-color: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    outline: none;
+    width: 80%;
+    padding: 15px;
+  }
+}
+.investment-page h1 {
+  font-family: 'Mrs Saint Delafield', cursive;
+  color: #C16E70;
+  font-size: 7rem;
+  margin: 30px 0px;
+  margin-left: 10px;
+}
+@media (max-width: 500px) {
+  .parallax {
+    display: none;
+  }
+}
 .price-boxes {
   margin: 50px auto;
   margin-left: 2%;
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .price-boxes {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 }
 .price-boxes .box {
   height: 350px;
@@ -340,6 +692,18 @@ table {
   padding: 20px;
   margin: 30px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 800px) {
+  .price-boxes .box {
+    height: 350px;
+    width: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .price-boxes .box {
+    width: 80%;
+    font-size: 1.4rem;
+  }
 }
 .price-boxes h2 {
   font-family: 'Mrs Saint Delafield', cursive;
@@ -358,6 +722,13 @@ table {
   margin-top: 20px;
   background-color: #f7f7f7;
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .nav-container {
+    margin-bottom: 20px;
+  }
 }
 .nav-container .logo {
   height: 100px;
@@ -365,17 +736,50 @@ table {
   padding-left: 50px;
   padding-bottom: 10px;
 }
+@media (max-width: 800px) {
+  .nav-container .logo {
+    margin: 10px auto;
+    margin-left: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .nav-container .logo {
+    margin: 0px;
+    width: 90%;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .nav-container .logo-bar {
+    width: 100%;
+  }
+}
 .nav-container .ml-auto {
   display: flex;
   width: 50%;
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .nav-container .ml-auto {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .nav-container .ml-auto {
+    flex-direction: column;
+  }
+}
 .nav-container .nav-link {
   color: #DBB3B1;
   font-size: 2.2rem;
   font-family: 'Titillium Web', sans-serif;
   font-weight: thin;
+}
+@media (max-width: 500px) {
+  .nav-container .nav-link {
+    font-size: 2rem;
+  }
 }
 .nav-container .nav-link:hover {
   color: #C16E70;
@@ -400,13 +804,33 @@ table {
   flex-direction: column;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .side-bar {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .side-bar {
+    display: none;
+  }
+}
 .side-bar h4 {
   font-size: 5rem;
   margin-left: 25px;
   margin-top: 50px;
 }
+@media (max-width: 500px) {
+  .side-bar h4 {
+    margin-left: 10px;
+  }
+}
 .side-bar ul {
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .side-bar ul {
+    padding: 5%;
+  }
 }
 .side-bar li {
   font-family: 'Titillium Web', sans-serif;
@@ -427,12 +851,33 @@ table {
   outline: 1px solid #ffffff;
   outline-offset: 5px;
 }
+@media (max-width: 800px) {
+  .portfolio-header {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .portfolio-header {
+    position: relative;
+    background-color: none;
+    margin: 0 auto;
+    outline: none;
+    width: 80%;
+    height: 170px;
+    padding-bottom: 25%;
+  }
+}
 .portfolio-header h1 {
   padding-top: 25%;
   font-family: 'Mrs Saint Delafield', cursive;
   color: #C16E70;
   font-size: 6rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .portfolio-header h1 {
+    padding-top: 20%;
+  }
 }
 .portfolio-container {
   margin-top: 50px;
@@ -444,7 +889,17 @@ table {
   justify-content: flex-end;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-left: -5%;
+}
+@media (max-width: 800px) {
+  .photo-section {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 500px) {
+  .photo-section {
+    width: 95%;
+    justify-content: space-evenly;
+  }
 }
 .photo-section img {
   height: 100%;
@@ -456,24 +911,35 @@ table {
   padding: 0px;
   margin: 0px;
   height: 300px;
+  width: auto;
+}
+@media (max-width: 800px) {
+  .photo-section .photo {
+    height: 250px;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .photo-section .photo {
+    height: 190px;
+    width: auto;
+    margin: 0 auto;
+  }
 }
 * {
   box-sizing: border-box;
 }
-html,
-body {
+html {
   font-size: 62.5%;
 }
-html p,
-body p {
+html p {
   font-size: 1.6rem;
 }
-html li,
-body li {
+html li {
   font-size: 1.6rem;
 }
-html h2,
-body h2 {
+html h2 {
   font-size: 3rem;
 }
 .app-background {

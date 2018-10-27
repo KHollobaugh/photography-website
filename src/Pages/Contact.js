@@ -11,7 +11,7 @@ const Contact = () => {
         <p>My work hours are Monday-Friday, 8am to 5pm, but I will do my best to get back to you promptly regardless of when you contact me.</p>
         <p>I am located in Grand Rapids, MI but happy to travel.</p>
         </div>
-        <div className="contact-form">
+        <div className="contact-column-two">
         <ContactForm />
         </div>
 

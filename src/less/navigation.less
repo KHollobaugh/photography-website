@@ -5,18 +5,43 @@
     margin-top: 20px;
     background-color: @background;
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @media @phone {
+        margin-bottom: 20px;
+    }
 
     .logo {
         height: 100px;
         width: auto;
         padding-left: 50px;
         padding-bottom: 10px;
+        @media @tablet {
+            margin: 10px auto;
+            margin-left: 20%;
+        }
+        @media @phone {
+            margin: 0px;
+            width: 90%;
+            height: auto;
+        }
+    }
+    .logo-bar {
+        @media @tablet {
+            width: 100%;        }
     }
     .ml-auto {
         display: flex;
         width: 50%;
         justify-content: space-evenly;
         align-items: center;
+        @media @tablet {
+            width: 100%;
+        }
+        @media @phone {
+            flex-direction: column;
+        }
+        
     }
 
     .nav-link {
@@ -24,6 +49,9 @@
         font-size: 2.2rem;
         font-family: 'Titillium Web', sans-serif;
         font-weight: thin;
+        @media @phone {
+            font-size: 2rem;
+        }
     }
     .nav-link:hover {
         color: @dark-text;
@@ -51,13 +79,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    @media @phone {
+        display: none;
+    }
+    @media @tablet {
+        display: none;
+    }
     h4 {
         font-size: 5rem;
         margin-left: 25px;
         margin-top: 50px;
+        @media @phone {
+            margin-left: 10px;
+        }
     }
     ul {
         padding: 20px;
+        @media @phone {
+            padding: 5%;
+        }
     }
     li {
         font-family: 'Titillium Web', sans-serif;
