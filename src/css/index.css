@@ -925,7 +925,7 @@ table {
 }
 @media (max-width: 500px) {
   .photo-section .photo {
-    height: 150px;
+    height: 160px;
     width: auto;
     margin: 0 auto;
   }
