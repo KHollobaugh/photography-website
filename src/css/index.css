@@ -179,6 +179,7 @@ table {
 .contact-page p {
   font-size: 1.6rem;
   padding: 20px 0px;
+  line-height: 25px;
 }
 .contact-page .contact-columns {
   display: flex;
@@ -767,6 +768,7 @@ table {
 }
 @media (max-width: 500px) {
   .nav-container .ml-auto {
+    width: 100%;
     flex-direction: column;
   }
 }
@@ -778,7 +780,8 @@ table {
 }
 @media (max-width: 500px) {
   .nav-container .nav-link {
-    font-size: 2rem;
+    width: 100%;
+    font-size: 2.5rem;
   }
 }
 .nav-container .nav-link:hover {
@@ -922,7 +925,7 @@ table {
 }
 @media (max-width: 500px) {
   .photo-section .photo {
-    height: 190px;
+    height: 150px;
     width: auto;
     margin: 0 auto;
   }
