@@ -7,6 +7,7 @@ import Copyright from './components/Copyright';
 import Portfolio from './Pages/Portfolio';
 import Investment from './Pages/Investment';
 import Contact from './Pages/Contact';
+import Footer from './components/Footer';
 
 document.body.classList.add('app-background');
 
@@ -21,6 +22,7 @@ class App extends Component {
       <Route path = '/investment' component = {Investment} />
       <Route path = '/Contact' component = {Contact} />
 
+      <Footer />
       <Copyright />
       </div>
     );

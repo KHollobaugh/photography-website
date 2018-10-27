@@ -5,6 +5,7 @@ RESET
 v2.0b1 | 201101 
 NOTE:WORK IN PROGRESS
 USE WITH CAUTION AND TEST WITH ABANDON */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 html,
 body,
 div,
@@ -150,6 +151,33 @@ table {
   font-style: normal;
   font-weight: 400;
   src: local('Mrs Saint Delafield'), local('MrsSaintDelafield-Regular'), url(https://fonts.gstatic.com/s/mrssaintdelafield/v5/v6-IGZDIOVXH9xtmTZfRagunqBw5WC62QKknKg.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html p {
+  font-size: 1.6rem;
+}
+html li {
+  font-size: 1.6rem;
+}
+html h2 {
+  font-size: 3rem;
+}
+.app-background {
+  background-color: #f7f7f7;
+}
+.parallax-element {
+  height: 100vh;
+}
+.copyright {
+  padding-top: 5px;
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
 }
 .contact-page {
   width: 90%;
@@ -930,30 +958,122 @@ table {
     margin: 0 auto;
   }
 }
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
-html {
-  font-size: 62.5%;
+.social-media {
+  font-size: 2rem;
+  text-align: center;
+  color: #C16E70;
+  margin: 20px 0px;
 }
-html p {
-  font-size: 1.6rem;
+.footer-social-icons {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
 }
-html li {
-  font-size: 1.6rem;
+@media (max-width: 800px) {
+  .footer-social-icons {
+    width: 80%;
+  }
 }
-html h2 {
+@media (max-width: 500px) {
+  .footer-social-icons {
+    width: 90%;
+  }
+}
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+}
+.social-icons a {
+  text-decoration: none;
+  color: #C16E70;
   font-size: 3rem;
 }
-.app-background {
-  background-color: #f7f7f7;
+@media (max-width: 500px) {
+  .social-icons a {
+    font-size: 2rem;
+  }
 }
-.parallax-element {
-  height: 100vh;
+.fa-facebook {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.copyright {
-  padding-top: 5px;
-  font-family: 'Tenor Sans', sans-serif;
-  font-size: 1.4rem;
-  text-align: center;
+.fa-facebook:hover {
+  background-color: #3d5b99;
+  color: #f7f7f7;
+}
+.fa-twitter {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-twitter:hover {
+  background-color: #00aced;
+  color: #f7f7f7;
+}
+.fa-rss {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-rss:hover {
+  background-color: #eb8231;
+  color: #f7f7f7;
+}
+.fa-youtube {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-youtube:hover {
+  background-color: #e64a41;
+  color: #f7f7f7;
+}
+.fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-linkedin:hover {
+  background-color: #0073a4;
+  color: #f7f7f7;
+}
+.fa-instagram {
+  padding: 10px 9px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-instagram:hover {
+  background-color: #e25714;
+  color: #f7f7f7;
 }
